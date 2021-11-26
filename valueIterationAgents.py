@@ -87,7 +87,6 @@ class ValueIterationAgent(ValueEstimationAgent):
         q_value = 0
         for (nextState, prob) in trans_states_and_probs:
             reward = self.mdp.getReward(state, action, nextState)
-            discount = self.discount
             q_value += prob*( reward + self.discount * self.values[nextState])
         return q_value
 

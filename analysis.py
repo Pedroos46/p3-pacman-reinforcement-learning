@@ -19,11 +19,11 @@
 # Set the given parameters to obtain the specified policies through
 # value iteration.
 
-def question2():
+def question2():    #Checked the values for the perfect indexes to cross the bridge
     answerDiscount = 0.9
     answerNoise = 0.01
     return answerDiscount, answerNoise
-
+#We tested each index for its purpose and manage to end with a good results using those values
 def question3a():
     answerDiscount = 0.3
     answerNoise = 0.01
